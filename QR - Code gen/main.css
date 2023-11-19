@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+body{
+    padding: 0%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#card img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    border:  2px solid black;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 25px;
+    background-color: rgb(244, 244, 244);
+}
+.card input{
+    padding: .5rem;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+}
+button{
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    border-radius: 15px;
+}
+#qrimgs{
+    /* background-color:rgb(244, 244, 244) ; */
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#qrimgs a{
+    background-color: black;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+

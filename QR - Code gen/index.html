@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-Generator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div>
+            <h1>QR-Code Generator</h1>
+        </div>
+    <div class="main-container">
+    <div class="card">
+        <img src="back.jpg">
+  
+        <h1>Enter the URL</h1>
+        <input type="url" placeholder="https://URL" class="geturl" id="geturl" size="50">
+        <button onclick="Generate()">Generate</button>
+    </div>
+    <div id="qrimgs" data-aos="fade-down" >
+        <img src="" id="qrimg">
+        <a  download="qrcode.png" style="display: none;" onclick="Generate()" id="downloadlink">download</a>
+    </div>
+</div>
+</section>
+<script>
+  AOS.init();
+  
+    let qrimgs = document.getElementById("qrimgs");
+    let qrimg = document.getElementById("qrimg");
+    let geturl = document.getElementById("geturl");
+    let downloadlink = document.getElementById('downloadlink');
+    function Generate(){
+        qrimg.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+geturl.value;
+        qrCodeURL=qrimg.src;
+            
+            // Display the download link
+            downloadlink.href = qrCodeURL;
+            downloadlink.style.display = 'block';
+    
+    }
+</script>
+</body>
+</html> 
